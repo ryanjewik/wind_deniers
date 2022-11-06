@@ -18,3 +18,21 @@ print("Around when will you leave the house? (1-24)")
 leaveTime = int(input()) #time people will leave the house
 print("Around when will you return to the house? (1-24)")
 returnTime = int(input()) #time people will return to the house
+
+from WeatherAPI import KelvintoFahrenheit
+
+
+
+kelvinOuterTemp = KelvintoFahrenheit(outerTemp)
+print("Kelvin outer temperature: ", kelvinOuterTemp)
+
+print("Cooling rate:", coolRate)
+print("Heating rate:", heatRate)
+print("humidity: ", humidity)
+print("snow", snow)
+print("rain", rain)
+print("heat warning: ", heatWarning)
+print("outside temperature: ", outerTemp)
+
+from WeatherAPI import list_length
+print(list_length)
